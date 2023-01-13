@@ -1,0 +1,41 @@
+:root {
+	--loader-background-color: linear-gradient(rgb(227, 227, 236), rgb(179, 105, 240));
+}
+
+.circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(blue, green, red);
+  animation: animate 0.5s linear infinite;
+}
+
+.circle:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  background: black;
+}
+
+.circle span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(blue, green, red);
+}
+
+.circle span:nth-child(1) {filter: blur(5px);}
+.circle span:nth-child(2) {filter: blur(10px);}
+.circle span:nth-child(3) {filter: blur(20px);}
+.circle span:nth-child(4) {filter: blur(40px);}
+
+@keyframes animate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,14 @@
+.move_information {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.move_information:last-child {
+    margin-bottom: 0;
+}
+
+.draw_subtitle {
+    margin: 0 10px 10px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
